@@ -61,5 +61,5 @@ app.get('/api/consultar', (req, res) => {
 
 // Iniciar el servidor
 app.listen(port, () => {
-    console.log(`Servidor escuchando en http://localhost:${port}`);
+    console.log(`Servidor escuchando en el puerto ${port}`);
 });
