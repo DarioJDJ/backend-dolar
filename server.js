@@ -1,6 +1,8 @@
 const express = require('express');
 const mysql = require('mysql2');
 const dotenv = require('dotenv');
+const cors = require('cors');
+
 
 dotenv.config();
 
@@ -26,6 +28,8 @@ db.connect((err) => {
 
 // Middleware
 app.use(express.json());
+app.use(cors());
+
 
 // Ruta para guardar un valor
 app.post('/api/guardar', (req, res) => {
