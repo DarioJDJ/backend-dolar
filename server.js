@@ -29,7 +29,7 @@ db.connect((err) => {
 // Middleware
 app.use(express.json());
 app.use(cors({
-    origin: 'https://cdpn.io',
+    
   }));
 
 
